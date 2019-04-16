@@ -1,4 +1,4 @@
-query_osm <- function(key, value = NULL, crop = "test", geo){
+query_osm <- function(key, value = NULL, crop = "fcwa", geo){
   
   if (is.null(value)){
     group_shapes <- opq(bbox = st_bbox(FCWA)) %>%
