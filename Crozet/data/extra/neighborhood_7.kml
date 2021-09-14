@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>neighborhood_7.kml</name>
+	<Style id="s_ylw-pushpin_hl15">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin16</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl15</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin16">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Placemark>
+		<name>neighborhood_7</name>
+		<visibility>0</visibility>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-78.7302847850425,38.08833369772194,0 -78.73049420525119,38.08806215435453,0 -78.73017227769346,38.08740087611487,0 -78.72831528780442,38.08729801177596,0 -78.72844209633671,38.08745753364182,0 -78.72852833921051,38.08759188018087,0 -78.72842469705444,38.08774170475065,0 -78.72826831318758,38.08774284686942,0 -78.7281584576136,38.08769648419084,0 -78.72801201180832,38.08777805515075,0 -78.72796573324528,38.08791939842415,0 -78.72801295355717,38.08799387316046,0 -78.72822598863374,38.08811481186537,0 -78.72841175463199,38.08826622716172,0 -78.72848948695972,38.08837418883978,0 -78.7286634196066,38.08840046936528,0 -78.73013727519582,38.08838970770309,0 -78.7302847850425,38.08833369772194,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

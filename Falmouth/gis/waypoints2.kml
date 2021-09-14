@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Beerienteering 2019</name>
+    <description/>
+    <Style id="icon-1499-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1499-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1499-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1499-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1499-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1499-0288D1-nodesc-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1499-0288D1-nodesc-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1499-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1499-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1499-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1499-FF5252-normal">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1499-FF5252-highlight">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1499-FF5252">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1499-FF5252-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1499-FF5252-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1499-FF5252-nodesc-normal">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1499-FF5252-nodesc-highlight">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1499-FF5252-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1499-FF5252-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1499-FF5252-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1499-FFD600-nodesc-normal">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1499-FFD600-nodesc-highlight">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1499-FFD600-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1499-FFD600-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1499-FFD600-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1826-0F9D58-normal">
+      <IconStyle>
+        <color>ff589d0f</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1826-0F9D58-highlight">
+      <IconStyle>
+        <color>ff589d0f</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1826-0F9D58">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1826-0F9D58-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1826-0F9D58-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Checkpoints</name>
+      <Placemark>
+        <name>(41.640083, -70.583083)</name>
+        <styleUrl>#icon-1499-FF5252-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -70.583083,41.640083,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>41.647333,-70.580250</name>
+        <styleUrl>#icon-1499-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -70.58025,41.647333,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>41.64178, -70.58917</name>
+        <description>CLUE: Merry (1)</description>
+        <styleUrl>#icon-1499-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            -70.58917,41.64178,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>41.64772, -70.58569</name>
+        <description>CLUE: Pippin (1)</description>
+        <styleUrl>#icon-1499-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            -70.58569,41.64772,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>41.64514, -70.58691</name>
+        <description>15 - Pippin</description>
+        <styleUrl>#icon-1499-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -70.58691,41.64514,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>41.64637, -70.59208</name>
+        <description>12 - Merry</description>
+        <styleUrl>#icon-1499-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -70.59208,41.64637,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>41.65084, -70.59054</name>
+        <description>CODE: Bilbo Baggins</description>
+        <styleUrl>#icon-1499-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            -70.59054,41.65084,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>41.65259, -70.59718</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -70.59718,41.65259,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>41.65182, -70.60103</name>
+        <styleUrl>#icon-1499-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -70.60103,41.65182,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>41.65001, -70.59579</name>
+        <description>8 - Merry</description>
+        <styleUrl>#icon-1499-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -70.59579,41.65001,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>41.64725, -70.59515</name>
+        <description>Rivendell / Base Camp</description>
+        <styleUrl>#icon-1826-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            -70.59515,41.64725,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>41.64696,-70.60133</name>
+        <styleUrl>#icon-1499-FF5252-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -70.60133,41.64696,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>41.640974, -70.600573</name>
+        <description><![CDATA[CLUE: "Speak Friend And Enter"<br>CODE: Gandalf]]></description>
+        <styleUrl>#icon-1499-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -70.600573,41.640974,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(41.642944, -70.583028)</name>
+        <description>CODE - Treebeard</description>
+        <styleUrl>#icon-1499-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -70.583028,41.642944,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>41.643205, -70.592292</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -70.592292,41.643205,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>41.653147, -70.594935</name>
+        <styleUrl>#icon-1499-FF5252-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -70.594935,41.653147,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>41.641030, -70.604009</name>
+        <styleUrl>#icon-1499-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -70.604009,41.64103,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>41.640008, -70.598401</name>
+        <styleUrl>#icon-1499-FF5252-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -70.598401,41.640008,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>41.645847, -70.593983</name>
+        <description>10 - Pippin</description>
+        <styleUrl>#icon-1499-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -70.593983,41.645847,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>41.647221, -70.598137</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -70.598137,41.647221,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Untitled layer</name>
+    </Folder>
+  </Document>
+</kml>

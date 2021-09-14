@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>light_cover_2.kml</name>
+	<Style id="s_ylw-pushpin_hl15">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin16</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl15</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin16">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Placemark>
+		<name>light_cover_2</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-78.74839364537327,38.09745565972852,0 -78.7488007929351,38.09716659650505,0 -78.74858857156794,38.09691114209701,0 -78.74843017804412,38.096654684572,0 -78.74827808794169,38.09647710430774,0 -78.74813749494818,38.0962265150669,0 -78.74797199742108,38.09610933645025,0 -78.74768299001033,38.09610312534566,0 -78.74748632100909,38.09608786473023,0 -78.74719726536583,38.09619106669992,0 -78.74707227717239,38.09627729435461,0 -78.74685815197749,38.09649661256481,0 -78.74682014633771,38.09669397057351,0 -78.74683147467408,38.09692434679832,0 -78.74689964459388,38.09728812640906,0 -78.74710286668757,38.097475407917,0 -78.74714218538729,38.09760697215305,0 -78.74757761695707,38.09754256857021,0 -78.74787301439096,38.09762196618106,0 -78.74839364537327,38.09745565972852,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>
