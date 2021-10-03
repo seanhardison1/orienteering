@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>diff_3.kml</name>
+	<Style id="style">
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style0">
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>diff_3</name>
+		<styleUrl>#stylemap_id0</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-78.76393662598031,38.09057659771801,0 -78.76304068856386,38.08738856977287,0 -78.74952932069937,38.08653616552514,0 -78.73044508470856,38.08661859314616,0 -78.72974244483615,38.08594748396364,0 -78.72886372627099,38.08506690440117,0 -78.72936110936699,38.08466302880414,0 -78.73303836951399,38.08408345818744,0 -78.73287938259163,38.08224729376221,0 -78.73057419961845,38.08051024446377,0 -78.72735967536472,38.08158502869424,0 -78.72590190518676,38.08269184474747,0 -78.72413048844003,38.08372230942932,0 -78.71998549607952,38.08367340519851,0 -78.72015231204598,38.08548592864761,0 -78.72037371167154,38.08747079260837,0 -78.72659521700132,38.08717406272002,0 -78.74886635014634,38.08867872529912,0 -78.76160989774394,38.08969899427787,0 -78.76393662598031,38.09057659771801,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

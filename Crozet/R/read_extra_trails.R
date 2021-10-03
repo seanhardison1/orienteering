@@ -11,7 +11,7 @@ for (i in c("ir1.kml","ir2.kml","ir3.kml","ir4.kml")){
   assign('extra_trails', bind_rows(extra_trails, ir))
 }
 
-plot(extra_trails)
+# plot(extra_trails)
 
 extras <- NULL
 fl <- list.files(here::here("Crozet/data/extra"))

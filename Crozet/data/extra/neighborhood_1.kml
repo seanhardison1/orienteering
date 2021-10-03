@@ -2,26 +2,17 @@
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
 	<name>neighborhood_1.kml</name>
-	<Style id="s_ylw-pushpin_hl15">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-	</Style>
-	<StyleMap id="m_ylw-pushpin">
+	<StyleMap id="msn_ylw-pushpin">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin16</styleUrl>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#s_ylw-pushpin_hl15</styleUrl>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="s_ylw-pushpin16">
+	<Style id="sn_ylw-pushpin">
 		<IconStyle>
 			<scale>1.1</scale>
 			<Icon>
@@ -29,17 +20,29 @@
 			</Icon>
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
 	</Style>
 	<Placemark>
 		<name>neighborhood_1</name>
-		<visibility>0</visibility>
-		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<styleUrl>#msn_ylw-pushpin</styleUrl>
 		<Polygon>
 			<tessellate>1</tessellate>
 			<outerBoundaryIs>
 				<LinearRing>
 					<coordinates>
-						-78.73121660814486,38.09298403431541,0 -78.7314344792386,38.09287289473131,0 -78.73159409597902,38.09261300353977,0 -78.73157102517582,38.09248486301233,0 -78.73144246755162,38.0923603290411,0 -78.73128020186758,38.09236773008758,0 -78.73111270880712,38.09245029530537,0 -78.73094415958016,38.09265031112443,0 -78.73090132224978,38.09272945610211,0 -78.73090202548612,38.09281607526724,0 -78.73108253963744,38.09299193321478,0 -78.73110492412597,38.09299176876922,0 -78.73121660814486,38.09298403431541,0 
+						-78.73125272421858,38.09299430367908,0 -78.73135189483943,38.09292989021561,0 -78.73143552824375,38.09287394262692,0 -78.73151945224549,38.09278626861741,0 -78.73157965889317,38.09271810333093,0 -78.73162325786916,38.09263709130001,0 -78.73162543731995,38.09259295066582,0 -78.73160508571765,38.0925414749162,0 -78.73155944090678,38.09247964223519,0 -78.73149165937961,38.09243036975571,0 -78.73143477646796,38.09239824524771,0 -78.73134711552051,38.09238296704412,0 -78.73128362619074,38.09238490028983,0 -78.73125447335796,38.09240801029607,0 -78.73120440011643,38.09241726704984,0 -78.73118065805174,38.09242518962911,0 -78.73115307882767,38.09243289192236,0 -78.73112163868454,38.09244037254273,0 -78.73106302046926,38.09249489944743,0 -78.73100412095222,38.0925441575568,0 -78.73095486352598,38.0926195081031,0 -78.73094415958016,38.09265031112443,0 -78.73090132224978,38.09272945610211,0 -78.73090202548612,38.09281607526724,0 -78.73093484035307,38.09290163181189,0 -78.73098464936081,38.09295220743396,0 -78.73105703909424,38.09300115232013,0 -78.73109308116399,38.0930157365292,0 -78.73117471793901,38.09300912811712,0 -78.73125272421858,38.09299430367908,0 
 					</coordinates>
 				</LinearRing>
 			</outerBoundaryIs>

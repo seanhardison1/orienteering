@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>creek_1.kml</name>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin">
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin">
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+	</Style>
+	<Placemark>
+		<name>creek_1</name>
+		<styleUrl>#msn_ylw-pushpin</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				-78.73534429999999,38.0919496,0 -78.7349366,38.0917723,0 -78.7346684,38.091595,0 -78.7344216,38.0913923,0 -78.7341642,38.0911052,0 -78.7338101,38.0906662,0 -78.7335741,38.0901933,0 -78.73341310000001,38.0899569,0 -78.7332629,38.0896529,0 -78.7332093,38.0893742,0 -78.7330484,38.0889605,0 -78.7327265,38.0884622,0 -78.7325012,38.0882934,0 -78.7321793,38.0882089,0 -78.731836,38.0881245,0 -78.7316,38.0878374,0 -78.73138539999999,38.0876432,0 -78.7311601,38.0874996,0 -78.730924,38.087356,0 -78.7307417,38.0870183,0 -78.7304949,38.0867818,0 -78.7301623,38.0865032,0 -78.7295615,38.0860894,0 -78.72940060000001,38.0859712,0 -78.729304,38.0858192,0 -78.7290465,38.0856418,0 -78.7284028,38.0852111,0 -78.7281024,38.0850845,0 -78.72778049999999,38.085,0 -78.72759809999999,38.0850169,0 -78.72736209999999,38.0849578,0 -78.7272226,38.0848396,0 -78.7268042,38.0845778,0 -78.7261926,38.0842822,0 -78.72550169533319,38.08364163038743,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>
