@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>WP1.kml</name>
+	<Schema name="schema0" id="schema0">
+		<SimpleField type="string" name="Description"></SimpleField>
+		<SimpleField type="string" name="pdfmaps_photos"><displayName>Photos</displayName>
+</SimpleField>
+	</Schema>
+	<Style id="style1">
+		<IconStyle>
+			<Icon>
+				<href>http://download.avenza.com/images/pdfmaps_icons/pin-red-inground.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Placemark>
+		<name>WP1</name>
+		<TimeStamp><when>2021-10-10T11:37:32-04:00</when>
+</TimeStamp>
+		<styleUrl>#style1</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="#schema0">
+				<SimpleData name="Description">Watch for barbed wire</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<coordinates>-78.72589462568931,38.0802553390427,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

@@ -5,6 +5,7 @@ library(metR)
 library(ggpattern)
 library(magrittr)
 library(plotly)
+library(ggsn)
 
 # data file path----
 data.dir <- here::here("Crozet/data")
@@ -60,14 +61,11 @@ upper_forest <-
   st_difference(.,extras %>% filter(str_detect(Name, "neighb|light")) %>% 
                   st_union())
 
-# pattern
-# source(here::here("Crozet/R/pattern_simple.R"))
-# options(ggpattern_array_funcs = list(simple = create_pattern_simple))
-# exposed_sf <- 
-#   extras %>% 
-#   filter(name == "exposed") %>% 
-#   st_transform(crs = st_crs(croz_sf)) %>% 
-#   st_intersection(croz_sf)
+outline <- st_read(here::here('Crozet/data/map_outline.kml')) %>% 
+  st_coordinates() %>% 
+  .[1:4,c(1,2)]
+
+wps <- extras %>% filter(str_detect(Name, "WP"))
 
 # colors----
 # neighb_col <- "#f5a9a4"
@@ -91,22 +89,64 @@ stripe_col <- "#faebd780"
 # trail_col <- "#E65100"
 trail_col <- "#8d21ff"
 # pl_col <- "indianred"
-pl_col <- "#503435"
+pl_col <- "#986554"
+
+xlim = c(-78.746, -78.725)
+ylim = c(38.076, 38.09275)
+
+pk1 <- croz_sf %>% 
+  st_intersection(.,extras %>% filter(Name == "pk1") %>% 
+                                   st_transform(crs = st_crs(croz_sf))) %>%  
+  filter(elev %in% c(410, 420)) %>% 
+  st_cast("POLYGON")
+pk2 <- croz_sf %>% 
+  st_intersection(.,extras %>% filter(Name == "pk2") %>% 
+                    st_transform(crs = st_crs(croz_sf))) %>% 
+  filter(elev %in% c(370, 380)) %>% 
+  st_cast("POLYGON")
+pk3 <- croz_sf %>% 
+  st_intersection(.,extras %>% filter(Name == "pk3") %>% 
+                    st_transform(crs = st_crs(croz_sf))) %>% 
+  filter(elev %in% c(380, 390)) %>% 
+  st_cast("POLYGON")
+
+sg <- extras %>% 
+  filter(str_detect(name, "sg"))
 
 # make map----
-map <- ggplot() +
+ map <- 
+  ggplot() +
   
-  #contours----
+  # # #contours----
+  geom_contour_filled(data = croz_df,
+               aes(x = Longitude, y = Latitude, z = elev),
+               bins = 100,
+               size = 0.75,
+               show.legend = F) +
+
+  geom_sf(data = pk1, fill = "grey60",
+          color = "transparent",
+                      show.legend = F, inherit.aes = F) +
+  geom_sf(data = pk2, fill = "grey70",
+          color = "transparent",
+          show.legend = F, inherit.aes = F) +
+  geom_sf(data = pk3, fill = "grey65",
+          color = "transparent",
+          show.legend = F, inherit.aes = F) +
+  
+  
   geom_contour(data = croz_df,
-               aes(x = Longitude, y = Latitude, z = elev, colour = ..level..),
-               bins = 75,
-               size = 0.4) +
+                      aes(x = Longitude, y = Latitude, z = elev),
+                      bins = 100,
+                      size = 0.1,
+                      color = "grey1",
+                      show.legend = F) +
+  scale_fill_manual(values = rev(pals::kovesi.linear_grey_10_95_c0(100))) +
   geom_text_contour(data = croz_df,
                     aes(x = Longitude, y = Latitude, 
                         z = elev, group = grp),size = 2,skip = 0,
                     label.placement = label_placement_flattest()) +
-  scale_color_gradientn(colors = c("#00000080",
-                                   "#000000FF")) +
+
   guides(color = "none") +
 
   # Restricted areas----
@@ -129,7 +169,10 @@ map <- ggplot() +
   geom_sf(data = unforested_4, fill = open_col, color = "transparent") +
   geom_sf(data = extras %>% 
             filter(name == "light_cover"), fill = open_col, color = "transparent") +
-
+  
+  #parking lot----
+  geom_sf(data = extras %>% filter(name == "parking lot"), 
+        fill = "grey50", color = "transparent") +
   
   #Service and residential roads----
   geom_sf(data = res, color = res_col, size = 0.5) +
@@ -146,11 +189,12 @@ map <- ggplot() +
   #creeks
   geom_sf(data = extras %>% filter(name == "Creeks"), 
           color = water_col, size = 0.75) +
+
   
   # Park boundary
   geom_sf(data = ms, fill = "transparent",
           linetype = 4,
-          size = 1,
+          size = 1.25,
           color = bound_col) +
   
   #lakes
@@ -168,14 +212,21 @@ map <- ggplot() +
   #Trails----
   geom_sf(data = osm_paths %>% 
             filter(!osm_id %in% exclude), 
-          color = trail_col, size = 0.6) +
-  geom_sf(data = extra_trails, color = trail_col, size = 0.6) +
+          color = trail_col, size = 1) +
+  geom_sf(data = extra_trails, color = trail_col, size = 1) +
+  geom_sf(data = sg, color = trail_col, size = 0.5, linetype = "longdash") +
   
-  #Power line
-  geom_sf(data = pl, color = pl_col)  +
-  #Map boundary
-  coord_sf(xlim = c(-78.755, -78.725),
-       ylim = c(38.075, 38.1065)) +
+  #Power line----
+  geom_sf(data = pl, color = pl_col, size = 1.25)  +
+  
+  
+  #Waypoints----
+  geom_sf(data = wps) +
+   
+  #Map boundary----
+  coord_sf(xlim = c(-78.746, -78.7235),
+       ylim = c(38.076, 38.095)) +
+
 
   #Theme
   scale_x_continuous(expand = c(0.001,0.001)) +
@@ -189,18 +240,18 @@ map <- ggplot() +
         panel.grid.major = element_line(color = "grey30", linetype = 1,
                                         size = 0.15),
         panel.background = element_rect(fill = "white", color = NA),
-        panel.ontop = F)  +
-ggsn::scalebar(dist = 0.5,
+        panel.ontop = F) +
+ggsn::scalebar(dist = 0.25,
                dist_unit = "km",
                transform = T,
                location = "topleft",
-               height = 0.01,
-               x.min = -78.755,
-               x.max =  -78.725,
-               y.min = 38.075,
-               y.max = 38.1065,
+               height = 0.025,
+               x.min = -78.746,
+               x.max =  -78.716,
+               y.min = 38.066,
+               y.max = 38.076,
                border.size = 0.1) 
-# map
+map
 # t <- osm_paths
 # ggplotly(
 # ggplot()  +

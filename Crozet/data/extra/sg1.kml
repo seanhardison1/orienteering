@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>sg1.kml</name>
+	<StyleMap id="lineStyle">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#lineStyle1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#lineStyle0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="lineStyle0">
+		<LineStyle>
+			<color>99ffac59</color>
+			<width>6</width>
+		</LineStyle>
+	</Style>
+	<Style id="lineStyle1">
+		<LineStyle>
+			<color>99ffac59</color>
+			<width>6</width>
+		</LineStyle>
+	</Style>
+	<Placemark>
+		<name>Path</name>
+		<styleUrl>#lineStyle</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				-78.72854,38.0798,328.89 -78.72824,38.07981,334.82 -78.72805,38.07982,339.5 -78.72781000000001,38.07958,345.31 -78.72781999999999,38.07958,345.21 -78.72772000000001,38.07937,347.41 -78.72772999999999,38.07936,347.41 -78.72771,38.07915,351.28 -78.72788,38.07903,357.28 -78.72806,38.0789,362.78 -78.72806,38.07889,362.78 -78.72842,38.07869,369.51 -78.72879,38.07852,373.67 -78.72879,38.07851,373.67 -78.729,38.07827,374.21 -78.72917,38.07813,374 -78.72938000000001,38.07802,372.61 -78.72939,38.07802,372.61 -78.72960999999999,38.07784,375.47 -78.72987999999999,38.07778,373.92 -78.72987999999999,38.07777,373.92 -78.73012,38.07773,371.93 -78.73036326245574,38.07780793790726,363.5 -78.73036666912107,38.07780934383368,358.31 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>

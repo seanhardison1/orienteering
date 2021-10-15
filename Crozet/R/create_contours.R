@@ -17,10 +17,10 @@ croz_df <-
   dplyr::rename(Longitude = x,
                 Latitude = y,
                 elev = dem1) %>% 
-  mutate(grp = ifelse(Longitude < -78.75, 1,
-                      ifelse(Longitude > -78.75 & Longitude < -78.74,2,
-                             ifelse(Longitude > -78.74 & Longitude < -78.73,3,
-                                    ifelse(Longitude > -78.73 & Longitude < -78.72,4,NA)))))
+  mutate(grp = ifelse(Longitude > -78.746 & Longitude < -78.74038, 1,
+                             ifelse(Longitude > -78.74038 & Longitude < -78.73475,2,
+                                    ifelse(Longitude > -78.73475 & Longitude < -78.72912,3,
+                                           ifelse(Longitude > -78.72912,4,NA)))))
 
 # convert to sf
 croz_sf <- as(croz_con, "sf") %>% 

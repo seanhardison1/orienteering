@@ -6,6 +6,7 @@ df <- data.frame(
   y = c(1,2,3,4,5),
   z = factor(c(1,2,3,4,5)))
 
+# neighb_col <- "#f5a9a4"
 neighb_col <- "#960f0fA3"
 # forest_col <- "#77BF7266"
 forest_col <- "#4E4F615e"
@@ -13,20 +14,20 @@ forest_col <- "#4E4F615e"
 # open_col <- "#a9bf7266"
 open_col <- "#493D2A40"
 res_col <- "grey20"
-# grav_col <- "grey60"
+grav_col <- "grey60"
 grav_col <- "#645145"
 # water_col <- "lightblue"
 water_col <- "#7A0C0D"
 # bound_col <- "#5B202A"
 bound_col <- "#ff5900"
+# bound_col <- "#8F6352"
 tert_col <- "#000000FF"
 stripe_col <- "#faebd780"
 # trail_col <- "blue"
 # trail_col <- "#E65100"
 trail_col <- "#8d21ff"
 # pl_col <- "indianred"
-pl_col <- "#503435"
-
+pl_col <- "#986554"
 
 leg <- ggplot(df, aes(x, y)) +
   geom_tile(aes(fill = z)) +
@@ -53,16 +54,16 @@ leg <- ggplot(df, aes(x, y)) +
                                  trail_col,
                                  pl_col,
                                  grav_col),
-                      labels = c("Elevation (ft.)",
+                      labels = c("Elevation (m)",
                                  "Park Boundary",
                                  "Trail",
                                  "Power line",
                                  "Gravel/dirt road")) +
   theme(legend.key.width = unit(1.5,"cm"))+
-  guides(color = guide_legend(override.aes = list(size = c(1,1,2,1,1),
+  guides(color = guide_legend(override.aes = list(size = c(1,1,1,1,1),
                                                   linetype = c("solid",
+                                                               "44",
                                                                "solid",
-                                                               "41",
                                                                "solid",
                                                                "solid")
   )
@@ -72,7 +73,7 @@ leg <- ggplot(df, aes(x, y)) +
 leg
 ggsave(leg,
        device = "pdf",
-       filename = file.path("pdf/legend.pdf"),
+       filename = here::here("crozet/map/legend.pdf"),
        dpi = 400,
        bg = "transparent")
 

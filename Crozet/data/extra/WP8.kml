@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>WP8.kml</name>
+	<Style id="style1">
+		<IconStyle>
+			<Icon>
+				<href>http://download.avenza.com/images/pdfmaps_icons/pin-red-inground.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Placemark>
+		<name>WP8</name>
+		<TimeStamp><when>2021-10-10T13:46:44-04:00</when>
+</TimeStamp>
+		<styleUrl>#style1</styleUrl>
+		<Point>
+			<coordinates>-78.7360990665709,38.0877388412423,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>WP11.kml</name>
+	<Style id="style1">
+		<IconStyle>
+			<Icon>
+				<href>http://download.avenza.com/images/pdfmaps_icons/pin-red-inground.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Placemark>
+		<name>WP11</name>
+		<TimeStamp><when>2021-10-05T08:12:07-04:00</when>
+</TimeStamp>
+		<styleUrl>#style1</styleUrl>
+		<Point>
+			<coordinates>-78.74364327188719,38.0902723802916,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>
