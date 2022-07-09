@@ -10,9 +10,9 @@ library(ggsn)
 library(extrafont)
 
 #set up------------------------------------------------------------------------
-gis.dir <- here::here("gis")
-r.dir <- here::here("R")
-pdf.dir <- here::here("pdf")
+gis.dir <- here::here("Falmouth/gis")
+r.dir <- here::here("Falmouth/R")
+pdf.dir <- here::here("Falmouth/pdf")
 
 #if process raw contour data
 process_raw <- F
@@ -20,40 +20,40 @@ process_raw <- F
 #get polygons
 source(file.path(r.dir,"get_polygon.R"))
 
-FCWA <- get_polygon(filename = "FCWA") 
+FCWA <- sf::st_read(paste0(here::here("Falmouth/gis/"),filename,".kml"))
 
-mf1 <- get_polygon(filename = "mixedforest1") %>% st_intersection(FCWA) 
-mf2 <- get_polygon(filename = "mixedforest2") %>% st_intersection(FCWA) 
-mf3 <- get_polygon(filename = "mixedforest3") %>% st_intersection(FCWA) 
-mf4 <- get_polygon(filename = "mixedforest4") 
-mf5 <- get_polygon(filename = "mixedforest5") %>% st_intersection(FCWA) 
+mf1 <- sf::st_read(paste0(here::here("Falmouth/gis/mixedforest1.kml"))) %>% st_intersection(FCWA) 
+mf2 <- sf::st_read(paste0(here::here("Falmouth/gis/mixedforest2.kml"))) %>% st_intersection(FCWA) 
+mf3 <- sf::st_read(paste0(here::here("Falmouth/gis/mixedforest3.kml"))) %>% st_intersection(FCWA) 
+mf4 <- sf::st_read(paste0(here::here("Falmouth/gis/mixedforest4.kml")))
+mf5 <- sf::st_read(paste0(here::here("Falmouth/gis/mixedforest5.kml"))) %>% st_intersection(FCWA) 
 
-p1 <- get_polygon(filename = "private1") %>% st_intersection(FCWA) 
-p2 <- get_polygon(filename = "private2") %>% st_intersection(FCWA) 
-p3 <- get_polygon(filename = "private3") %>% st_intersection(FCWA) 
+p1 <- sf::st_read(paste0(here::here("Falmouth/gis/private1.kml"))) %>% st_intersection(FCWA) 
+p2 <- sf::st_read(paste0(here::here("Falmouth/gis/private2.kml"))) %>% st_intersection(FCWA) 
+p3 <- sf::st_read(paste0(here::here("Falmouth/gis/private3.kml"))) %>% st_intersection(FCWA) 
 
-scrub1 <- get_polygon(filename = "scrubland") %>% st_intersection(FCWA) 
+scrub1 <- sf::st_read(paste0(here::here("Falmouth/gis/scrubland.kml"))) %>% st_intersection(FCWA) 
 # scrub2 <- get_polygon(filename = "scrubland2") %>% st_intersection(FCWA) 
 
-elev_filt <- get_polygon(filename = "elevation_filter") %>% st_intersection(FCWA) 
-elev_filt2 <- get_polygon(filename = "elevation_filter2") %>% st_intersection(FCWA) 
+elev_filt <- sf::st_read(paste0(here::here("Falmouth/gis/elevation_filter.kml"))) %>% st_intersection(FCWA) 
+elev_filt2 <- sf::st_read(paste0(here::here("Falmouth/gis/elevation_filter2.kml"))) %>% st_intersection(FCWA) 
 
-roadcut1 <- get_polygon(filename = "roadcut1")
-roadcut2 <- get_polygon(filename = "roadcut2") 
+roadcut1 <- sf::st_read(paste0(here::here("Falmouth/gis/roadcut1.kml")))
+roadcut2 <- sf::st_read(paste0(here::here("Falmouth/gis/roadcut2.kml")))
+
 #get lines
-source(file.path(r.dir,"get_lines.R"))
-fcwa_roads1 <- get_lines("fcwa-roads1")
-fcwa_roads2 <- get_lines("fcwa-roads2")
-fcwa_roads3 <- get_lines("fcwa-roads3")
+fcwa_roads1 <- sf::st_read(paste0(here::here("Falmouth/gis/fcwa-roads1.kml")))
+fcwa_roads2 <- sf::st_read(paste0(here::here("Falmouth/gis/fcwa-roads2.kml")))
+fcwa_roads3 <- sf::st_read(paste0(here::here("Falmouth/gis/fcwa-roads3.kml")))
 
-fcwa_unlisted1 <- get_lines("fcwa_unlisted1")
-fcwa_unlisted2 <- get_lines("fcwa_unlisted2")
-fcwa_unlisted3 <- get_lines("fcwa_unlisted3")
+fcwa_unlisted1 <- sf::st_read(paste0(here::here("Falmouth/gis/fcwa_unlisted1.kml")))
+fcwa_unlisted2 <- sf::st_read(paste0(here::here("Falmouth/gis/fcwa_unlisted2.kml")))
+fcwa_unlisted3 <- sf::st_read(paste0(here::here("Falmouth/gis/fcwa_unlisted3.kml")))
 
 #get waypoints
 source(file.path(r.dir,"get_waypoints.R"))
-waypoints <- get_waypoints()[[1]]
-rivendell <- get_waypoints()[[2]]
+waypoints <- get_waypoints()
+rivendell <- get_waypoints()
 
 #Process base map--------------------------------------------------------------
 if (process_raw){
@@ -81,12 +81,11 @@ if (process_raw){
   save(top_sf_crop, file = file.path(gis.dir, "topo_4ft.Rdata"))
   
 } else {
-  load(file = file.path(gis.dir,"topo_4ft.Rdata"))
+  load(file = file.path(gis.dir,"topo_5ft.Rdata"))
 
 }
 
 #Source OSM data--------------------------------------------------------------
-
 source(file.path(r.dir,"query_osm.R"))
 
 #Query all roads

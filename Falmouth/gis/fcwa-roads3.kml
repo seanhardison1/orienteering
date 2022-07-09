@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>fcwa-roads3.kmz</name>
+	<Style id="s_ylw-pushpin_hl10">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin10">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin01">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin10</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl10</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>fcwa-roads3</name>
+		<styleUrl>#m_ylw-pushpin01</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				-70.56863713745658,41.63355841120732,0 -70.56861167574037,41.63413164986274,0 -70.56849665747464,41.63542824261113,0 -70.56851360915205,41.63578170253077,0 -70.56836928414222,41.63634814074924,0 -70.56807409507459,41.63727399252915,0 -70.56802460453484,41.63743546041864,0 -70.56820032510798,41.63759837493539,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>

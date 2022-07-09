@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>scrubland.kmz</name>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Placemark>
+		<name>scrubland</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-70.58351232613471,41.63665491053025,0 -70.57957189829325,41.63584858133362,0 -70.57837764271297,41.63563223378935,0 -70.57670647739174,41.63511633201882,0 -70.57448277031014,41.63487728707343,0 -70.57274592620963,41.63447581832846,0 -70.57059695621346,41.63390322210374,0 -70.56776223157476,41.63318348654764,0 -70.56775738576248,41.63429854209865,0 -70.56747718872393,41.63506763673188,0 -70.56652859153129,41.63697918172764,0 -70.56579797918997,41.63906710404381,0 -70.56625211267881,41.63990569059336,0 -70.56614444689122,41.64113531316539,0 -70.56637219212288,41.64221516195641,0 -70.56621271274078,41.64276819728759,0 -70.5660982556325,41.64320296349078,0 -70.56600934369422,41.64381514783084,0 -70.56609221166624,41.64432670850852,0 -70.56611142617794,41.6447061773339,0 -70.56627344518665,41.64476980433759,0 -70.5664537215898,41.64495391163059,0 -70.56688606830893,41.64515186292456,0 -70.56729256553039,41.6453264018502,0 -70.56807349859444,41.64552469273187,0 -70.56812396641241,41.64486801000654,0 -70.56817681527139,41.6436799493228,0 -70.56806094628172,41.64324884886329,0 -70.56792756884843,41.64242180148059,0 -70.57849633372838,41.64493164838395,0 -70.58351232613471,41.63665491053025,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

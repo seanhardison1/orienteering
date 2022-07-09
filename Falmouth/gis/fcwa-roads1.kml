@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>fcwa-roads1.kmz</name>
+	<StyleMap id="m_ylw-pushpin01">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin10</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl10</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin10">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl10">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Placemark>
+		<name>fcwa-roads1</name>
+		<styleUrl>#m_ylw-pushpin01</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				-70.58093922323151,41.64255902817676,0 -70.57527863464558,41.64051099112063,0 -70.5701268456675,41.6385540622674,0 -70.56984511908183,41.63842938576037,0 -70.56962565624016,41.63826292200737,0 -70.56945803247049,41.63810108561269,0 -70.56918637728172,41.63784907524699,0 -70.56899021085943,41.63773810117423,0 -70.56854175073721,41.63757342241462,0 -70.56827772133238,41.63759279418915,0 -70.56801699534455,41.63762112277477,0 -70.56793745024927,41.63763486927022,0 -70.56762061785484,41.63858628163917,0 -70.56737799215499,41.63892265224661,0 -70.56728475772204,41.6390886391315,0 -70.56729722962838,41.63924416189444,0 -70.56717866383251,41.63968046939858,0 -70.56703405683126,41.64025860204218,0 -70.56700783523551,41.64039270854737,0 -70.56705808630896,41.6404941929137,0 -70.56729190090671,41.64096639412875,0 -70.56768151959551,41.64159607868483,0 -70.56793605094516,41.64251116210572,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>

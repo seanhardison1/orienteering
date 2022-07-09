@@ -1,15 +1,14 @@
 get_waypoints <- function(filename){
   
-  SPP <- maptools::getKMLcoordinates(paste("gis/",filename,".kml",sep = ""))
+  SPP <- sf::st_read(here::here("Falmouth/gis/waypoints2.kml")) %>% 
+    sf::st_zm() %>% 
+    sf::st_as_sf()
   
-  lat <- NULL
-  lon <- NULL
-  for (i in 1:length(SPP)){
-    lon[i] <- SPP[1:length(SPP)][[i]][,1]
-    lat[i] <- SPP[1:length(SPP)][[i]][,2]
-  }
-  waypoints <- data.frame(lon = lon,
-                          lat = lat)
+  waypoints <- 
+    dream::sfc_as_cols(SPP, names = c("lon","lat")) %>% 
+    st_set_geometry(NULL) %>% 
+    dplyr::select(lon, lat)
+  
   coordinates(waypoints) <- ~lon + lat
   stashes <- waypoints %>% 
     as("sf") %>% 
@@ -31,7 +30,5 @@ get_waypoints <- function(filename){
     stashout
   )
 }
-get_waypoints(filename= "waypoints2")
-
 
 

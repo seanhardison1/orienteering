@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>mixedforest3.kmz</name>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>mixedforest3</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-70.58278979428688,41.63943976544434,0 -70.58467174264415,41.63629163895018,0 -70.5832632397405,41.63593192715808,0 -70.57692166580388,41.63448627314376,0 -70.57320247478704,41.63364586845042,0 -70.56967297977755,41.63283623272312,0 -70.5682561087245,41.63256028269113,0 -70.56590118042539,41.63226407494035,0 -70.56282050458978,41.63184339296778,0 -70.56268185215589,41.63227416537674,0 -70.56555213290473,41.63262328959671,0 -70.56564173449148,41.63277876518504,0 -70.56577313294197,41.63302359160285,0 -70.56775641806207,41.63344161140318,0 -70.56776820583018,41.63320387572137,0 -70.56849164968341,41.63337902611202,0 -70.5710225765727,41.63401829938525,0 -70.57305356225508,41.63455793153565,0 -70.57446638075095,41.63487761687391,0 -70.57674774245623,41.63514687394853,0 -70.57837992785353,41.63563382192574,0 -70.57970768540946,41.63587829872007,0 -70.58350041998786,41.63665091257553,0 -70.58266739270678,41.6380573221122,0 -70.58192724958889,41.63926801639111,0 -70.58278979428688,41.63943976544434,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>
